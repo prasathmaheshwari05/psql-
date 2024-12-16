@@ -1,0 +1,44 @@
+ task--1
+ 1)>
+  select * from city  where country_id>100 limit 5;
+ 2)<
+   select * from city  where country_id<100 limit 5;
+ 3)<=
+   select * from city  where country_id<=100 limit 5;
+ 4)>=
+   select * from city  where country_id>=100 limit 5;
+5)!=
+    select * from city where country_id!=101;
+6)=
+select * from city where country_id=101;
+----------------------------------------------
+ 1)and
+ select * from country where country='angola' and country='algeria';
+2)Or 
+select * from actor where first_name='Nick' or first_name='ED';
+3)not
+select * from country where not  country='angola' ;
+
+---------------------------
+1)IN
+select * from actor where first_name in ('Nick', 'ED');
+2)Not in
+select * from actor where first_name not in ('Nick', 'ED');
+3)betweeen
+select * from city where country_id  between 85 and 100;
+4)not between
+select * from city where country_id not between 85 and 100;
+5)like
+ select * from city where city like '%a%' limit 5;
+  select * from city where city like '_a%' limit 5;
+6)not like
+  select * from city where city not like '%a%' limit 5;
+7)is not null
+  select * from city where country_id is not null limit 5;
+8)is null
+  select * from city where country_id is  null limit 5;
+9)limit
+select * from city where city like '%a%' limit 5;
+10)offset
+ select * from city where city like '%a%' offset 5 limit 5;
+
